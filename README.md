@@ -74,16 +74,17 @@ optional arguments:
 
 We used the [PubMed 200k RCT dataset](https://github.com/Franck-Dernoncourt/pubmed-rct), which was originally constructed for sequential short text classification, with each sentence labeled as `background`, `objective`, `methods`, `results` and `conclusions`.  
 
-We concatenated the **background**, **objective** and **results** sections of each RCT paper abstract as the model input and the goal of the model is to generate the **conclusions**. If hint words is needed, just concatenate the hint words right after the **results** section. The transformed sample csv file can be found in [data/](https://github.com/MiuLab/RCT-Gen/tree/master/data). 
+We concatenated the `background`, `objective` and `results` sections of each RCT paper abstract as the model input and the goal of the model is to generate the `conclusions`. If hint words is needed, just concatenate the hint words right after the `results` section. The transformed sample csv file can be found in [data/](https://github.com/MiuLab/RCT-Gen/tree/master/data). 
 
 ## Citation
 
 Please use the following bibtex entry:
 
 ```
-@article{shieh2019rctgen,
-  title={Towards Understanding of Medical Randomized Controlled Trails by Conclusion Generation},
-  author={Shieh, Alexander Te-Wei and Chuang, Yung-Sung and Su, Shang-Yu and Chen, Yun-Nung},
-  year={2019}
+@inproceedings{shieh2019rctgen,
+  title     = {Towards Understanding of Medical Randomized Controlled Trails by Conclusion Generation},
+  author    = {Shieh, Alexander Te-Wei and Chuang, Yung-Sung and Su, Shang-Yu and Chen, Yun-Nung},
+  booktitle = {In Proceedings of the 10th International Workshop on Health Text Mining and Information Analysis at EMNLP (LOUHI 2019)},
+  year      = {2019}
 }
 ```
