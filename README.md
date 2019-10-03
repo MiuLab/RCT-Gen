@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ## Usage
 
 ### Fine-tuning from official gpt-2 pretrained weights
-```python
+```
 usage: gpt2_train.py [-h] [--save_model_name SAVE_MODEL_NAME]
                      [--train_file TRAIN_FILE] [--dev_file DEV_FILE]
                      [--n_epochs N_EPOCHS] [--batch_size BATCH_SIZE]
@@ -55,7 +55,7 @@ optional arguments:
 ```
 
 ### Testing trained model
-```python
+```
 usage: gpt2_eval.py [-h] [--model_name MODEL_NAME] [--dev_file DEV_FILE]
                     [--pred_file PRED_FILE] [--example_num EXAMPLE_NUM]
 
