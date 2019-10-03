@@ -31,7 +31,50 @@ pip install -r requirements.txt
 
 ## Usage
 
-TODO
+### Fine-tuning from official gpt-2 pretrained weights
+```python
+usage: gpt2_train.py [-h] [--save_model_name SAVE_MODEL_NAME]
+                     [--train_file TRAIN_FILE] [--dev_file DEV_FILE]
+                     [--n_epochs N_EPOCHS] [--batch_size BATCH_SIZE]
+                     [--pred_file PRED_FILE] [--example_num EXAMPLE_NUM]
+                     [--mode MODE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --save_model_name SAVE_MODEL_NAME
+                        pretrained model name or path to local checkpoint
+  --train_file TRAIN_FILE
+                        training data file name
+  --dev_file DEV_FILE   validation data file name
+  --n_epochs N_EPOCHS
+  --batch_size BATCH_SIZE
+  --pred_file PRED_FILE
+                        output prediction file name
+  --example_num EXAMPLE_NUM
+                        output example number, set to `-1` to run all examples
+```
+
+### Testing trained model
+```python
+usage: gpt2_eval.py [-h] [--model_name MODEL_NAME] [--dev_file DEV_FILE]
+                    [--pred_file PRED_FILE] [--example_num EXAMPLE_NUM]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model_name MODEL_NAME
+                        pretrained model name or path to local checkpoint
+  --dev_file DEV_FILE   validation data file name
+  --pred_file PRED_FILE
+                        output prediction file name
+  --example_num EXAMPLE_NUM
+                        output example number, set to `-1` to run all examples
+```
+
+## Data
+
+We used the [PubMed 200k RCT dataset](https://github.com/Franck-Dernoncourt/pubmed-rct), which was originally constructed for sequential short text classification, with each sentence labeled as `background`, `objective`, `methods`, `results` and `conclusions`.  
+
+We concatenated the `background`, `objective` and `results` sections of each RCT paper abstract as the model input and the goal of the model is to generate the `conclusions`. If hint words is needed, just concatenate the hint words right after the `results` section. The transformed sample csv file can be found in [/data](https://github.com/MiuLab/RCT-Gen/tree/master/data). 
 
 ## Citation
 
