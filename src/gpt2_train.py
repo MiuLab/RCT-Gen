@@ -98,7 +98,7 @@ def train_batch(model, batch, backward=True):
     return float(loss.cpu().float())
 
 
-if args.mode == "train":
+if __name__ == "__main__":
     best_ppl = 1000.0
     for epoch in range(args.n_epochs+1):
         model.train()
