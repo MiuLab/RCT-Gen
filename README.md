@@ -1,6 +1,6 @@
 # RCT-Gen
 
-Code for the paper ["Towards Understanding of Medical Randomized Controlled Trails by Conclusion Generation"](#)  
+Code for the paper ["Towards Understanding of Medical Randomized Controlled Trails by Conclusion Generation"](https://arxiv.org/abs/1910.01462)  
 In Proceedings of the 10th International Workshop on Health Text Mining and Information Analysis at EMNLP ([LOUHI 2019](https://louhi2019.fbk.eu/))
 
 Authors: [Alexander Te-Wei Shieh](https://lipolysis.github.io/), [Yung-Sung Chuang](https://voidism.github.io/), [Shang-Yu Su](https://www.shangyusu.com/), and [Yun-Nung Chen](https://www.csie.ntu.edu.tw/~yvchen/index.html)
@@ -15,7 +15,6 @@ Further inspection points out the limitations of this current approach and futur
 
 We modified the code from [huggingface/pytorch-pretrained-bert](https://github.com/huggingface/transformers) and adjusted the attention mask for fine-tuning on seq2seq data format(from `source` to `conclusion`).
 
-<!-- ![](https://i.imgur.com/o5EkmCn.png) -->
 ![](https://i.imgur.com/zDKjfua.png)
 
 ## Requirements
@@ -81,10 +80,11 @@ We concatenated the `background`, `objective` and `results` sections of each RCT
 Please use the following bibtex entry:
 
 ```
-@inproceedings{shieh2019rctgen,
+@inproceedings{alex2019understanding,
   title     = {Towards Understanding of Medical Randomized Controlled Trails by Conclusion Generation},
   author    = {Shieh, Alexander Te-Wei and Chuang, Yung-Sung and Su, Shang-Yu and Chen, Yun-Nung},
   booktitle = {In Proceedings of the 10th International Workshop on Health Text Mining and Information Analysis at EMNLP (LOUHI 2019)},
+  eprint    = {1910.01462},
   year      = {2019}
 }
 ```
