@@ -1,6 +1,6 @@
 # RCT-Gen
 
-Code for the paper ["Towards Understanding of Medical Randomized Controlled Trails by Conclusion Generation"](https://arxiv.org/abs/1910.01462)  
+Code for the paper ["Towards Understanding of Medical Randomized Controlled Trials by Conclusion Generation"](https://arxiv.org/abs/1910.01462)  
 In Proceedings of the 10th International Workshop on Health Text Mining and Information Analysis at EMNLP ([LOUHI 2019](https://louhi2019.fbk.eu/))
 
 Authors: [Alexander Te-Wei Shieh](https://lipolysis.github.io/), [Yung-Sung Chuang](https://voidism.github.io/), [Shang-Yu Su](https://www.shangyusu.com/), and [Yun-Nung Chen](https://www.csie.ntu.edu.tw/~yvchen/index.html)
